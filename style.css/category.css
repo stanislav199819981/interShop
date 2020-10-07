@@ -1,0 +1,100 @@
+
+.hover:hover {
+    outline: 10px solid white;
+    outline-offset: 0px;
+
+}
+
+.text-onCard {
+    opacity: 0;
+    height: 187px;
+    width: 100%;
+}
+
+.text-onCard:hover {
+    
+     z-index: 1;
+     opacity: 1;
+    font-size: 24px; 
+}
+
+.hover.text:hover {
+    display: inherit;
+    outline: 0px;
+}
+
+.categoryText {
+    padding-left: 20px ;
+    color: white;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.categotyItem {
+    margin: 20px;
+    width: 500px;
+    height: 228px;
+    /* background-color: red; */
+}
+
+.firstPhoto {
+    background: url(../img/category/first.png) no-repeat;
+    background-size: cover;
+}
+
+.secondPhoto {
+    background: url(../img/category/second.png) no-repeat;
+    background-size: cover;
+}
+
+
+.thirdPhoto {
+    background: url(../img/category/third.png) no-repeat;
+    background-size: cover;
+}
+
+
+.fourPhoto {
+    background: url(../img/category/four.png) no-repeat;
+    background-size: cover;
+}
+
+.fivePhoto {
+    background: url(../img/category/five.png) no-repeat;
+    background-size: cover;
+}
+
+.sixPhoto {
+    background: url(../img/category/six.png) no-repeat;
+    background-size: cover;
+}
+
+.sevenPhoto {
+    background: url(../img/category/seven.png) no-repeat;
+    background-size: contain;
+}
+
+.eigthPhoto {
+    background: url(../img/category/eigth.png) no-repeat;
+    background-size: contain;
+}
+
+.ninePhoto {
+    background: url(../img/category/nine.png) no-repeat;
+    background-size: contain;
+}
+
+.tenPhoto {
+    background: url(../img/category/ten.png) no-repeat;
+    background-size: contain;
+}
+
+.elevenPhoto {
+    background: url(../img/category/eleven.png) no-repeat;
+    background-size: contain;
+}
+
+.twalvePhoto {
+    background: url(../img/category/twalve.png) no-repeat;
+    background-size: contain;
+}

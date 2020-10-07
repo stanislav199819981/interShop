@@ -1,0 +1,54 @@
+
+.secondWraper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 500px;
+    background-color: #989898;
+}
+
+.footerImg {
+    flex: 1;
+    background: url(../img/Footer/footerImg.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 30px;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.rigthPart {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex: 1;
+}
+
+
+.retangleWithText {
+    padding-top: 30px;
+    padding-left:10px; 
+    margin: 20px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 10px;
+
+    background-color: #41413F;
+    color: white;
+    
+    min-height: 170px;
+    width: 100%
+}
+
+.textRigthPart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 20px;
+
+}
+
+.retangleText {
+  padding-left: 25px;
+  padding-right: 50px;
+}

@@ -1,0 +1,69 @@
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+
+.wrapper {
+  /* относительно позиционируем и меню и контент */
+  position: relative;
+  /* когда меню будет отодвигатся - скрываем горизонтальную прокрутку */
+  overflow-x: hidden;
+}
+
+.menu {
+  position: fixed;
+  left: 0;
+  top: 58px;
+  height: calc(100vh - 58px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #fff;
+  transition: 1s;
+  transform: translateX(0);
+}
+
+.line {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-list a{
+  text-decoration: none;
+}
+
+.js-menu-link  {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  line-height: 40px;
+  opacity: 0.5;
+  color: black;
+  font-size: 20px;
+  padding-right: 100px;
+  padding-left: 30px;
+}
+
+.title {
+  color: black;
+  font-style: normal;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  opacity: 1;
+  line-height: 64px;
+  padding-top: 20px;
+}
+
+.main {
+  background-color: black;
+}
+
