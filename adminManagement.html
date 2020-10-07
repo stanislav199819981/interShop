@@ -6,8 +6,8 @@
     <title>iGree</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <link rel="stylesheet" href="/style.css/header.css">
-    <link rel="stylesheet" href="/style.css/admin.css">
+    <link rel="stylesheet" href="../interShop/style.css/header.css">
+    <link rel="stylesheet" href="../interShop/style.css/admin.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
         <div class="row m-0">
             <div class="col-2 col-md-3 header__colOne ">
                 <a href="#burgerMenu">
-                    <img class="hamburger" src="../img/iconsPng/Hamburger_icon.svg.png" alt="menu">
+                    <img class="hamburger" src="../interShop/img/iconsPng/Hamburger_icon.svg.png" alt="menu">
                 </a>
             </div>
             <div class="col-8 col-md-6 header__colTwo ">
@@ -30,14 +30,14 @@
             </div>
             <div class="col-2 col-md-3 header__colThree ">
                 <a href="#settings">
-                    <img class="settings__image" src="/img/admin/surface1.png" alt="">
+                    <img class="settings__image" src="../interShop/img/admin/surface1.png" alt="">
                 </a>
             </div>
         </div><!-- row -->
     </header>
     
     <!-- admin profile -->
-    <div class="container-fluid">
+    <div class="container-fluid pt-0 pl-0 pb-0">
         <div class="row admin__profile">
             <div class="col-sm-12 admin__card">
                 <button class="accord_admin_panel">
@@ -52,14 +52,83 @@
             </div>
         </div>
     </div>
-    <!-- tabel -->
-    <div class="container">
-        <div class="row">
-            <div class="col-8 tabel_info">
+    <!-- table -->
+    <div class="container-xl pt-5">
+        <div class="row container_info">
+            <div class="col-8 p-1 table_info">
+                <table> <!-- table -->
+                    <tbody>
+                    <thead>Товары</thead>
+                        <col><!-- checkbox -->
+                        <tr>
+                            <td>
+                                <form action="">
+                                    <input type="checkbox">
+                                </form>
+                            </td>
+                        </tr>
+                        <col><!-- checkbox -->
+                        <tr>
+                            <td>
+                                <form action="">
+                                    <input type="checkbox">
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table><!-- table END -->
+            </div><!-- col-8 table_info END -->
 
-            </div>
-            <div class="col-4 tabel_filter">
-        
+            <div class="col-4 p-1 table_filter">
+                <table> <!-- table -->
+                    <tbody>
+                        <thead>
+                            <img class="table_filter_icon" src="../interShop/img/admin/filter.png" alt="">
+                                <span>Filter</span>
+                        </thead>
+                        <col><!-- checkbox -->
+                        <tr>
+                            <td>
+                                <p class="m-0">Название товара</p>
+                                <form action="">
+                                    <input class="input_table" type="text" placeholder="Название товара">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="m-0">Модель</p>
+                                <form action="">
+                                    <input class="input_table" type="text" placeholder="Название товара">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="m-0">Цена</p>
+                                <form action="">
+                                    <input class="input_table" type="text" placeholder="Название товара">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="m-0">Количество</p>
+                                <form action="">
+                                    <input class="input_table" type="text" placeholder="Название товара">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="m-0">Статус</p>
+                                <form action="">
+                                    <input class="input_table" type="text" placeholder="Название товара">
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table><!-- table END -->
             </div>
         </div>
     </div>
