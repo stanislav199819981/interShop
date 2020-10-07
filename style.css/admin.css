@@ -1,0 +1,89 @@
+.header-row.admin {
+    background-color:silver ;
+    position: relative;
+}
+.shopName.admin__header {
+    color: black;
+}
+.header-row.admin::after {
+    content: "";
+    display: block;
+    background-color: black;
+    border: 1px solid;
+}
+.header__colOne {
+    padding: 0 0 0 15px;
+}
+.header__colTwo {
+    text-align: center;
+    padding: 0;
+}
+.header__colThree {
+    justify-content: flex-end;
+    padding: 0 15px 0 0;
+}
+/* admin header */
+.admin__txt {
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+.settings__image {
+    width: 50px;
+    height: 50px;
+}
+/* admin profile */
+.admin__profile {
+    background-color: #c0c2a9;
+}
+.admin__card {
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding: 10px 0px 5px 0px;
+}
+.accord_admin_panel {
+    background-color: inherit;
+    border: none;
+    margin: 5px;
+    font-size: 28px;
+}
+.admin__name {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0 5px;
+}
+.admin__img {
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    margin-right: 5px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+/* tabel */
+.col-8.tabel_info {
+    background-color: aquamarine;
+}
+.col-4.tabel_filter {
+    background-color: brown;
+}
+
+/* media */
+@media(max-width: 850px) {
+    .admin__header {
+        font-size: 50px;
+    }
+    .admin__txt {
+        font-size: 24px;
+    }
+}
+@media(max-width: 445px) {
+    .admin__card {
+        justify-content: space-around;
+    }
+    .accord_admin_panel {
+        margin: 0;
+    }
+}
