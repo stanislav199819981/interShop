@@ -71,6 +71,7 @@
 }
 .col-4.table_filter {
     background-color: brown;
+    display: inline-block;
 }
 .table_filter_icon {
     width: 18px;
