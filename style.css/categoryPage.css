@@ -1,0 +1,34 @@
+.wrapperCategoryPage {
+    background-color: white;
+}
+
+.header-row.categoryPage {
+    position: relative;
+    background-color: white;
+}
+
+.categoryBlack {
+    color: black;
+}
+
+.col-sm.categotyItem {
+    height: 100px
+}
+
+.nameCategory {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 50px;
+    background-color: white;
+    color: #736D6D;
+}
+
+.nameCategoryText {
+    /* align-self: center; */
+}
+
+.filerCategory {
+    color: black;
+    
+}

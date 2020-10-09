@@ -1,40 +1,129 @@
-
-.hover:hover {
-    outline: 10px solid white;
-    outline-offset: 0px;
-
-}
-
-.text-onCard {
-    opacity: 0;
-    height: 187px;
-    width: 100%;
-}
-
-.text-onCard:hover {
-    
-     z-index: 1;
-     opacity: 1;
-    font-size: 24px; 
-}
-
-.hover.text:hover {
-    display: inherit;
-    outline: 0px;
-}
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
 
 .categoryText {
     padding-left: 20px ;
     color: white;
     font-size: 30px;
     text-decoration: underline;
+} 
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+figure {
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+figure span {
+    transition: 0.2s;
+    transform: translateY(20px);
+}
+
+figure p {
+    transition: 0.2s;
+    transform: translateY(-20px);
+    opacity: 0;
+    visibility: hidden;
+    /* letter-spacing: 10px; */
+}
+
+figure:before {
+    content: '';
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    border-top: solid 2px;
+    border-bottom: solid 2px;
+    transition: 0.2s;
+    transform: scaleX(0);
+}
+  
+figure:after {
+    content: '';
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    border-left: solid 2px;
+    border-right: solid 2px;
+    transition: 0.2s;
+    transform: scaleY(0);
+}
+
+.hideText {
+    display: flex;
+    font-family: 'Jura', sans-serif;
+    font-size: 30px;
+    opacity: 0;
+}
+
+figure:hover:before, 
+figure:hover:after{
+    transform: scale(1);
+}
+  
+figure:hover .hideText, 
+figure:hover p {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
 }
 
 .categotyItem {
+    width: 80vh;
     margin: 20px;
-    width: 500px;
-    height: 228px;
-    /* background-color: red; */
+    height: 161px;
+} 
+
+.category-item {
+    position: relative;
+    height: 200px;
+     min-width: 280px;
+}
+
+.category-item > figure {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    right: 15px;
+    bottom: 0;    
+}
+
+.commonPhotoStyle {
+    height: 180px;
+    min-width: 250px;
+}
+
+/* textHoverBlock */
+
+.mainTextBlock{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+}
+
+.firstPhoto.commonPhotoStyle {
+    text-align: justify;
+}
+
+.blackTextBlock {
+    color: black;
+}
+
+.whiteTextBlock {
+    color: white;
 }
 
 .firstPhoto {
@@ -42,26 +131,71 @@
     background-size: cover;
 }
 
+.textFirstPhotoPosition {
+    position: absolute;
+    top: 41%;
+    left: 11%;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 10px;
+}
+
 .secondPhoto {
     background: url(../img/category/second.png) no-repeat;
     background-size: cover;
 }
 
+.textSecondPhotoPosition {
+    position: absolute;
+    top: 41%;
+    left: 10%;
+    text-align: center;
+    font-size: 36px;
+    width: 100%;
+    letter-spacing: 0.37em;
+}
 
 .thirdPhoto {
     background: url(../img/category/third.png) no-repeat;
     background-size: cover;
 }
 
+.textThirdPhotoPosition {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 0.37em;
+} 
 
 .fourPhoto {
     background: url(../img/category/four.png) no-repeat;
     background-size: cover;
 }
 
+.textFourPhotoPosition {
+    position: absolute;
+    top: 60%;
+    left: 23%;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 0.37em;
+}
+
 .fivePhoto {
     background: url(../img/category/five.png) no-repeat;
     background-size: cover;
+
+}
+
+.textFivePhotoPosition {
+    position: absolute;
+    top: 41%;
+    left: 11%;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 0.37em;
 }
 
 .sixPhoto {
@@ -69,32 +203,95 @@
     background-size: cover;
 }
 
+.textSixPhotoPosition {
+    position: absolute;
+    top: 2%;
+    left: 10%;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 0.37em;
+}
+
 .sevenPhoto {
     background: url(../img/category/seven.png) no-repeat;
-    background-size: contain;
+    background-size: cover;
+}
+
+.textSevenPhotoPosition {
+    position: absolute;
+    top: 69%;
+    left: 8%;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 0.30em;
 }
 
 .eigthPhoto {
     background: url(../img/category/eigth.png) no-repeat;
-    background-size: contain;
+    background-size: cover;
+}
+
+.textEigthPhotoPosition {
+    position: absolute;
+    top: 41%;
+    left: 15%;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 0.37em;
 }
 
 .ninePhoto {
     background: url(../img/category/nine.png) no-repeat;
-    background-size: contain;
+    background-size: cover;
+}
+
+.textNinePhotoPosition {
+    position: absolute;
+    top: 60%;
+    left: 23%;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 0.37em;
 }
 
 .tenPhoto {
     background: url(../img/category/ten.png) no-repeat;
-    background-size: contain;
+    background-size: cover;
+}
+
+.textTenPhotoPosition {
+    position: absolute;
+    top: 41%;
+    left: 15%;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 0.7em;
 }
 
 .elevenPhoto {
     background: url(../img/category/eleven.png) no-repeat;
-    background-size: contain;
+    background-size: cover;
+}
+
+.textElevenPhotoPosition {
+    position: absolute;
+    top: 35%;
+    left: 13%;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 0.7em;
 }
 
 .twalvePhoto {
     background: url(../img/category/twalve.png) no-repeat;
-    background-size: contain;
+    background-size: cover;
+}
+
+.textTwalvePhotoPosition {
+    position: absolute;
+    top: 41%;
+    left: 15%;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 1.1em;
 }
