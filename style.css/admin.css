@@ -66,20 +66,31 @@
 
 } */
 /* table */
-.col-8.table_info {
-    background-color: aquamarine;
+.col-sm-9.table_info {
+    background-color:silver;
 }
-.col-4.table_filter {
-    background-color: brown;
+.col-sm-3.table_filter {
+    background-color: gray;
     display: inline-block;
 }
+
 .table_filter_icon {
     width: 18px;
     height: 18px;
     background-color: inherit;
 }
+/* input */
 .input_table {
     width: 100%;
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+.input_table:hover {
+    border:1px solid black;
+}
+.m-0.txt_input {
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* media */
@@ -98,5 +109,9 @@
     }
     .accord_admin_panel {
         margin: 0;
+    }
+    .m-0.txt_input {
+        display: flex;
+        justify-content: center;
     }
 }

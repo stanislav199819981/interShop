@@ -55,10 +55,16 @@
     <!-- table -->
     <div class="container-xl pt-5">
         <div class="row container_info">
-            <div class="col-8 p-1 table_info">
-                <table> <!-- table -->
-                    <tbody>
-                    <thead>Товары</thead>
+            <div class="col-sm-9 p-1 table_info">
+                <table class="table table-hover"> <!-- table -->
+                    <thead>
+                        <tr class="table-borderless">
+                            <th>
+                                Товары
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="col-12 m-0 p-0">
                         <col><!-- checkbox -->
                         <tr>
                             <td>
@@ -79,33 +85,49 @@
                 </table><!-- table END -->
             </div><!-- col-8 table_info END -->
 
-            <div class="col-4 p-1 table_filter">
-                <table> <!-- table -->
-                    <tbody>
-                        <thead>
-                            <img class="table_filter_icon" src="../interShop/img/admin/filter.png" alt="">
+            <div class="col-sm-3 p-1 table_filter">
+                <table class="table"> <!-- table -->
+                    <thead>
+                        <tr class="table-borderless">
+                            <th>
+                                <img class="table_filter_icon" src="../interShop/img/admin/filter.png" alt="">
                                 <span>Filter</span>
-                        </thead>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
                         <col>
                         <tr>
-                            <td>
+                            <td class="p-0">
                                 <form action="">
-                                    <p class="m-0">Название товара</p>
+                                    <p class="m-0 txt_input">Название товара</p>
                                     <input class="input_table" type="text" placeholder="Название товара">
-                                    <p class="m-0">Модель</p>
+                                    <p class="m-0 txt_input">Модель</p>
                                     <input class="input_table" type="number" placeholder="Модель">
-                                    <p class="m-0">Цена</p>
+                                    <p class="m-0 txt_input">Цена</p>
                                     <input class="input_table" type="number" placeholder="Цена">
-                                    <p class="m-0">Количество</p>
+                                    <p class="m-0 txt_input">Количество</p>
                                     <input class="input_table" type="number" placeholder="Количество">
-                                    <p class="m-0">Статус</p>
-                                    <input class="input_table" type="button" placeholder="Статус">
-                                    <button>
-                                        Filter
-                                    </button>
+                                    
+                                    <label for="exampleFormControlSelect1">
+                                        Статус
+                                    </label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
                                 </form>
                             </td>
                         </tr>
+                        <td class="d-flex justify-content-end">
+                            <button class="">
+                                Filter
+                            </button>
+                        </td>
                     </tbody>
                 </table><!-- table END -->
             </div><!-- table_filter END-->
