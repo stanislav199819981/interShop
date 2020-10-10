@@ -1,8 +1,9 @@
 .header-row.admin {
-    background-color:silver ;
+    background-color: ;
     position: relative;
 }
 .shopName.admin__header {
+    font-size: 50px;
     color: black;
 }
 .header-row.admin::after {
@@ -24,7 +25,7 @@
 }
 /* admin header */
 .admin__txt {
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
 }
@@ -34,7 +35,7 @@
 }
 /* admin profile */
 .admin__profile {
-    background-color: #c0c2a9;
+    background-color:;
 }
 .admin__card {
     display:flex;
@@ -54,45 +55,25 @@
     margin: 0 5px;
 }
 .admin__img {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     padding: 0;
     margin-right: 5px;
     border: 1px solid;
-    border-radius: 50%;
-}
-/* container info*/
-/* .container__info {
-
-} */
-/* table */
-.col-sm-9.table_info {
-    background-color:silver;
-}
-.col-sm-3.table_filter {
     background-color: gray;
+}
+/* table */
+.col-sm-3.table_filter {
     display: inline-block;
 }
-
+.thead_info {
+    background-color: #f6f6f6;
+}
 .table_filter_icon {
     width: 18px;
     height: 18px;
     background-color: inherit;
 }
-/* input */
-.input_table {
-    width: 100%;
-    border: 1px solid transparent;
-    border-radius: 8px;
-}
-.input_table:hover {
-    border:1px solid black;
-}
-.m-0.txt_input {
-    font-size: 14px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
 /* media */
 @media(max-width: 850px) {
    
@@ -104,14 +85,30 @@
     }
 }
 @media(max-width: 445px) {
+    .shopName.admin__header {
+        font-size: 35px;
+    }
+    .admin__header {
+        font-size: 35px;
+    }
     .admin__card {
+        padding: 3px 0;
         justify-content: space-around;
+    }
+    .admin__name {
+        font-size: 20px;
     }
     .accord_admin_panel {
         margin: 0;
     }
+    .container-xl.container_admin {
+        padding-top: 0;
+    }
     .m-0.txt_input {
         display: flex;
         justify-content: center;
+    }
+    .form-group {
+        margin: 0;
     }
 }
