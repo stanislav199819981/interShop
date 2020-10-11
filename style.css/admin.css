@@ -1,0 +1,114 @@
+.header-row.admin {
+    background-color: ;
+    position: relative;
+}
+.shopName.admin__header {
+    font-size: 50px;
+    color: black;
+}
+.header-row.admin::after {
+    content: "";
+    display: block;
+    background-color: black;
+    border: 1px solid;
+}
+.header__colOne {
+    padding: 0 0 0 15px;
+}
+.header__colTwo {
+    text-align: center;
+    padding: 0;
+}
+.header__colThree {
+    justify-content: flex-end;
+    padding: 0 15px 0 0;
+}
+/* admin header */
+.admin__txt {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+.settings__image {
+    width: 50px;
+    height: 50px;
+}
+/* admin profile */
+.admin__profile {
+    background-color:;
+}
+.admin__card {
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding: 10px 0px 5px 0px;
+}
+.accord_admin_panel {
+    background-color: inherit;
+    border: none;
+    margin: 5px;
+    font-size: 28px;
+}
+.admin__name {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0 5px;
+}
+.admin__img {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin-right: 5px;
+    border: 1px solid;
+    background-color: gray;
+}
+/* table */
+.col-sm-3.table_filter {
+    display: inline-block;
+}
+.thead_info {
+    background-color: #f6f6f6;
+}
+.table_filter_icon {
+    width: 18px;
+    height: 18px;
+    background-color: inherit;
+}
+/* media */
+@media(max-width: 850px) {
+   
+    .admin__header {
+        font-size: 50px;
+    }
+    .admin__txt {
+        font-size: 24px;
+    }
+}
+@media(max-width: 445px) {
+    .shopName.admin__header {
+        font-size: 35px;
+    }
+    .admin__header {
+        font-size: 35px;
+    }
+    .admin__card {
+        padding: 3px 0;
+        justify-content: space-around;
+    }
+    .admin__name {
+        font-size: 20px;
+    }
+    .accord_admin_panel {
+        margin: 0;
+    }
+    .container-xl.container_admin {
+        padding-top: 0;
+    }
+    .m-0.txt_input {
+        display: flex;
+        justify-content: center;
+    }
+    .form-group {
+        margin: 0;
+    }
+}

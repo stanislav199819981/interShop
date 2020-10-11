@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iGree</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="../interShop/style.css/header.css">
+    <link rel="stylesheet" href="../interShop/style.css/admin.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="col-12 p-0 header-row admin">
+        <!-- row -->
+        <div class="row m-0">
+            <div class="col-2 col-md-3 header__colOne ">
+                <a href="#burgerMenu">
+                    <img class="hamburger" src="../interShop/img/iconsPng/Hamburger_icon.svg.png" alt="menu">
+                </a>
+            </div>
+            <div class="col-8 col-md-6 header__colTwo ">
+                <span class='shopName admin__header'>
+                    admin
+                </span>
+                <span class="admin__txt">
+                    Управление
+                </span>
+            </div>
+            <div class="col-2 col-md-3 header__colThree ">
+                <a href="#settings">
+                    <img class="settings__image" src="../interShop/img/admin/surface1.png" alt="">
+                </a>
+            </div>
+        </div><!-- row -->
+    </header>
+    
+    <!-- admin profile -->
+    <div class="container-fluid pt-0 pl-0 pb-0">
+        <div class="row admin__profile">
+            <div class="col-sm-12 admin__card">
+                <button class="accord_admin_panel">
+                    <i class="fas fa-angle-down"></i>
+                </button>
+                <span class="admin__name">
+                    Руснак Игорь
+                </span>
+                <button class="admin__img">
+                    Foto
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- table -->
+    <div class="container-xl container_admin">
+        <div class="row">
+            <div class="col-sm-9 p-1 table_info">
+                <table class="table table-hover"> <!-- table -->
+                    <thead class="thead_info">
+                        <tr class="table-borderless">
+                            <th>
+                                Товары
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="col-12 m-0 p-0">
+                        <col><!-- checkbox -->
+                        <tr>
+                            <td>
+                                <form action="">
+                                    <input type="checkbox">
+                                </form>
+                            </td>
+                        </tr>
+                        <col><!-- checkbox -->
+                        <tr>
+                            <td>
+                                <form action="">
+                                    <div class="form-check">
+                                        <input type="checkbox">
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table><!-- table END -->
+            </div><!-- col-8 table_info END -->
+
+            <div class="col-sm-3 p-1 table_filter">
+                <table class="table"> <!-- table -->
+                    <thead class="thead_info">
+                        <tr class="table-borderless table-white">
+                            <th>
+                                <img class="table_filter_icon" src="../interShop/img/admin/filter.png" alt="">
+                                <span>Filter</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <col>
+                        <tr>
+                            <td class="p-0">
+                                <form action="" class="d-flex align-items-center flex-column">
+                                    <div class="form-group mt-2">
+                                    <label>
+                                        <p class="m-0 txt_input">Название товара</p>
+                                        <input class="form-control" type="text" placeholder="Название товара">
+                                    </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>
+                                            <p class="m-0 txt_input">Модель</p>
+                                            <input class="form-control" type="number" placeholder="Модель">
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>
+                                            <p class="m-0 txt_input">Цена</p>
+                                            <input class="form-control" type="number" placeholder="Цена">
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>
+                                            <p class="m-0 txt_input">Количество</p>
+                                            <input class="form-control" type="number" placeholder="Количество">
+                                        </label>
+                                    </div>
+                                    <label>
+                                        <p class="m-0 txt_input">Статус</p>
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </label>
+                                </form>
+                            </td>
+                        </tr>
+                        <td class="d-flex justify-content-end">
+                            <button class="btn btn-secondary">
+                                Filter
+                            </button>
+                        </td>
+                    </tbody>
+                </table><!-- table END -->
+            </div><!-- table_filter END-->
+        </div><!-- row END -->
+    </div><!-- Container END -->
+    
+    
+</body>
+</html>
