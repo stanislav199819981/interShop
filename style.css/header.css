@@ -10,6 +10,7 @@
     z-index: 1;
     background-color: #2c2c2b;
     opacity: 0.8;
+    z-index: 2;
 }
 
 .header-row:after {
