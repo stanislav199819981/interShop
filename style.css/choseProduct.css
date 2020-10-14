@@ -1,0 +1,143 @@
+.productPageWrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: white;
+}
+
+.productImage {
+    background-color: #C4C4C4;
+    height: calc(150px + 355 * (100vw /1280));
+    margin: 30px;
+    padding-left: 20px;
+    width: 50%;
+}
+
+.rigthPart {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.productName {
+    margin-top: 30px;
+    font-size: calc(15px + 16 * (100vw /1280));
+    color: black;
+    width: 100%
+}
+
+.productName:after {
+    content: "";
+    display: block;
+    margin-right: 20px;
+    background-color: black;
+    border: 0.8px solid black;
+}
+
+.productPrice {
+    text-align: end;
+    margin-right: 20px;
+}
+
+
+/* COLORS */
+.colors {
+    margin-top: calc(25px + 10 * (100vw /1280));
+}
+
+.colors ul{
+    list-style:none; 
+    padding:0; 
+    margin: 0;
+}
+
+.colors li{
+    margin: 0 15px 0 0; 
+    display: inline-block;
+}
+
+.colors label{
+    cursor: pointer;
+}
+
+.colors input{
+    display:none;
+}
+
+.colors input[type="radio"]:checked + 
+.swatch{
+    box-shadow: inset 0 0 0 2px white;
+}
+
+.swatch{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: calc(30px + 7 * (100vw /1280));
+  width: calc(30px + 7 * (100vw /1280));
+  margin: 0 5px 0 0 ;
+  border: 1px solid #d4d4d4;
+  border-radius: 100%;
+}
+
+/* selector */
+
+.select-size{
+    width: 50%;
+    margin-top: calc(30px + 7 * (100vw /1280));
+    margin-bottom: calc(30px + 7 * (100vw /1280));
+}
+
+.input-buy {
+    background-color: #565656;
+    color: white;
+    border: 0;
+    border: none;
+    height: 45px;
+    width: 150px;
+}
+
+@media (max-width: 767px) {
+    .productPageWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .productImage {
+        display: flex;
+        background-color: #C4C4C4;
+        height: calc(150px + 400 * (100vw /1280));
+        padding-left: 20px;
+        align-self: center;
+    }
+
+    .productName {
+        margin-top: 30px;
+        font-size: calc(15px + 16 * (100vw /1280));
+        color: black;
+        width: 100%
+    }
+
+    .colors {
+        align-self: center;
+    }
+
+    .input-buy {
+        display: flex;
+        justify-content: center;
+    }
+
+    .select-size {
+        align-self: center;
+    }
+
+    .form-style {
+        display: flex;
+        justify-content: center;
+
+    }
+
+     .select-size {
+        width: 100%;
+    }
+}

@@ -3,40 +3,37 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
-    height: 500px;
     background-color: #989898;
 }
 
 .footerImg {
     flex: 1;
     background: url(../img/Footer/footerImg.png) no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
+    height: 800px;
     margin: 30px;
     padding-left: 20px;
-    width: 865px;
+
 }
 
 .rigthPart {
     display: flex;
     flex-direction: column;
-    text-align: center;
     flex: 1;
 }
 
 
 .retangleWithText {
+    margin-top: 30px;
     padding-top: 30px;
     padding-left:10px; 
-    margin: 20px;
     text-align: center;
-    font-size: 30px;
+    font-size: calc(24px + 16 * (100vw /1280));
     border-radius: 10px;
 
     background-color: #41413F;
     color: white;
-    
-    min-height: 170px;
     width: 100%
 }
 
@@ -45,10 +42,35 @@
     flex-direction: row;
     justify-content: center;
     padding-right: 20px;
-
 }
 
 .retangleText {
-  padding-left: 25px;
-  padding-right: 50px;
+    margin-top: 20px;
+    padding-left: 25px;
+    padding-right: 150px;
+}
+
+@media (max-width: 767px) {
+    .footerImg {
+        display: none;
+    }
+    
+    .textRigthPart {
+        background: url(../img/Footer/footerImg.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+        backdrop-filter: blur(20px);
+    }
+
+    .retangleWithText {
+        margin-bottom: 30px;
+        font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) /1280));
+    }
+
+    .retangleText {
+        color: white;
+        text-align: center;
+        padding: 0;
+        font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) /1280));
+    }
 }

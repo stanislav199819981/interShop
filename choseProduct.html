@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css/header.css">
+    <link rel="stylesheet" href="./style.css/choseProduct.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header-row header-white-relative line-black-header">
+        <div class="row">
+            <div class="col-2 p-0 justify-content-end">
+                <a href="#burgerMenu">
+                    <img class="hamburger" src="./img/headerBlack/menublack.png" alt="menu">
+                </a>
+            </div>
+            <div class="col-8 text-center">
+                <span class='shopName categoryBlack'>
+                    IGree
+                </span>
+            </div>
+            <div class="col-2 p-0">
+                <a href="#shoppingBag">
+                    <img class="shoppingBag categoryBlack" src='./img/headerBlack/Shopingbagblack.png' alt="shoppingBag">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- UnderTheHeader -->
+    <!-- LeftPart -->
+    <div class="productPageWrapper">
+        <div class="productImage"></div>
+    <!-- Rigth Part -->
+        <div class="rigthPart">   
+            <div class="productName">
+                Пуховик из нейлона с принтом
+            </div>
+            <div class="productPrice">
+                1 800,00 UAH
+            </div>
+            <!-- colors start part -->
+            <div class="colors">
+                <ul>
+                  <li>
+                    <label>
+                      <input type="radio" name="color" value="black">
+                      <span class="swatch" style="background-color:#222"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="color" value="blue">
+                      <span class="swatch" style="background-color:#6e8cd5"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="color" value="green">
+                      <span class="swatch" style="background-color:#44c28d"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="color" value="green">
+                      <span class="swatch" style="background-color: #6160A4"></span>
+                    </label>
+                  </li>
+                </ul> 
+            </div> 
+              <!-- colors end part -->
+
+            <div class="form-style">
+              <form action="#" method="post">
+                  <select class="select-size">
+                      <option disabled>Выберите размер</option>
+                      <option>S</option>
+                      <option>L</option>
+                      <option>M</option>
+                      <option>X</option>
+                  </select>
+                      <p><input class="input-buy" type="submit" value="В корзину"></p>
+              </form> 
+          </div>
+        </div>  
+    </div>
+
+</body>
+</html>

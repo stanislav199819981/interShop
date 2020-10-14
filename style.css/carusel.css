@@ -1,5 +1,7 @@
 .carousel-item {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .caruselText {
@@ -8,18 +10,17 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 20%;
-    top: 34%;
-
+    margin-top: 40px;
 }
 
 .carusel.title {
     color: white;
-    font-size: 66px;
-    
+    font-size: calc(30px + 100 * (100vw / 1920)); 
 }
 
 .carusel.text {
     text-align: center;
     color: white;
+    font-size: calc(10px + 13 * (100vw / 1920));   
 }
+

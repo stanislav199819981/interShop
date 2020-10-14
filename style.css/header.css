@@ -1,8 +1,11 @@
+/* Header Black Part */
+
 .wrapper {
     background-color: #41413F;
 }
 
-.header-row {
+
+.header-black-fixed {
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -20,6 +23,32 @@
     border: 0.8px solid white
 }
 
+.shop-Name-Black {
+    opacity: 1;
+    color: #ffffff;
+    font-size: 42px;
+}
+
+
+/* Header White Part */
+
+.header-white-relative {
+    opacity: 1;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    width: 100%;
+    opacity: 1;
+}
+
+.line-black-header:after {
+    content: "";
+    display: block;
+    background-color: black;
+    border: 0.8px solid black;
+}
+
 .col-2 {
     display: flex;
     justify-content: space-between;
@@ -28,7 +57,7 @@
 
 .shopName {
     opacity: 1;
-    color: #ffffff;
+    color:black;
     font-size: 42px;
 }
 
@@ -46,6 +75,11 @@
     height: 30px;
 }
 
+/* Last PageBeg Color */
+
+.lastPageColor {
+    background-color: #41413F;
+}
 
 
 
